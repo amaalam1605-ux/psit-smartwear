@@ -1,30 +1,17 @@
 function StudentID({ onBack }) {
   return (
-    <div className="feature-screen">
-
-      {/* BACK */}
-      <button
-        className="back-button"
-        onClick={onBack}
-      >
-        ← Back
-      </button>
+    <div className="screen">
 
       {/* HEADER */}
-      <div className="feature-header">
+      <div className="screen-header">
+        <button
+          className="back-btn"
+          onClick={onBack}
+        >
+          ←
+        </button>
 
-        <span className="feature-icon">
-          🪪
-        </span>
-
-        <h1>
-          Student ID
-        </h1>
-
-        <p>
-          Digital Campus Identity
-        </p>
-
+        <h2>Student ID</h2>
       </div>
 
       {/* ID CARD */}
@@ -34,49 +21,53 @@ function StudentID({ onBack }) {
           PSIT
         </div>
 
-        <div className="id-photo">
+        <div className="id-avatar">
           SA
         </div>
 
-        <h2>
-          Sameer Alam
-        </h2>
+        <h2>Sameer Alam</h2>
 
-        <p>
-          Bachelor of Business Administration
+        <p className="id-course">
+          BBA
         </p>
 
-        {/* DETAILS */}
         <div className="id-details">
 
           <div>
-            <span>
-              Student ID
-            </span>
-
-            <strong>
-              PSIT-BBA-2026
-            </strong>
+            <span>Student ID</span>
+            <strong>25262102460</strong>
           </div>
 
           <div>
-            <span>
-              Year
-            </span>
+            <span>Year</span>
+            <strong>2nd Year</strong>
+          </div>
 
-            <strong>
-              2nd Year
-            </strong>
+          <div>
+            <span>Semester</span>
+            <strong>3rd Semester</strong>
+          </div>
+
+          <div>
+            <span>Institute</span>
+            <strong>PSIT</strong>
           </div>
 
         </div>
 
-        {/* VERIFIED */}
-        <div className="verified">
-          ✓ VERIFIED STUDENT
+        <div className="id-status">
+          ● ACTIVE STUDENT
         </div>
 
       </div>
+
+      {/* BACK */}
+      <button
+        className="secondary-btn"
+        onClick={onBack}
+      >
+        Back to Home
+      </button>
 
     </div>
   );
